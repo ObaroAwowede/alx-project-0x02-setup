@@ -1,4 +1,4 @@
-import { ButtonProps } from '../../interfaces';
+import { type ButtonProps } from '@/interfaces/index';
 import styles from '@/components/common/Button.module.css';
 
 const Button = ({ size, shape, children, ...rest }: ButtonProps) => {

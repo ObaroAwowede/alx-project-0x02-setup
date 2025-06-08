@@ -1,5 +1,5 @@
-import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,6 +13,9 @@ const geistMono = Geist_Mono({
 
 export default function Home() {
   return (
-    <h2>Welcome to the clone Airbnb app</h2>
+    <div>
+      <h2>Welcome to the clone Airbnb app</h2>
+    </div>
+    
   );
 }

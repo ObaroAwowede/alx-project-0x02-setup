@@ -1,3 +1,5 @@
+import { ButtonHTMLAttributes } from 'react';
+
 export interface CardProps {
     title: string;
     content: string;
@@ -12,4 +14,10 @@ export interface PostModalProps {
 export interface Post {
   title: string;
   content: string;
+}
+
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  size: 'small' | 'medium' | 'large';
+  shape: 'rounded-sm' | 'rounded-md' | 'rounded-full';
+  children: React.ReactNode;
 }

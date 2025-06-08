@@ -2,6 +2,7 @@ import Card from "@/components/common/Card";
 import { useState } from "react";
 import PostModal from "@/components/common/PostModal";
 import { Post } from "../interfaces";
+import Header from '@/components/layout/Header';
 
 export default function Home() {
   const [posts, setPosts] = useState<Post[]>([]);
@@ -16,6 +17,7 @@ export default function Home() {
 
   return (
     <div style={{ padding: "20px" }}>
+      <Header />
       <div>
         <h1>This is our home page</h1>
         <Card
